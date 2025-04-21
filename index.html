@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario's Map</title>
+  <link rel="icon" type="image/x-icon" href="lakitu_gif.gif">
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+</head>
+<body>
+  <!--menu list-->
+  <div class="main_menu">
+    <ul class="menu_list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Map</a></li> <!--anchor-->
+      <!--lakitu, kamek, goomba, koopa, bowser jr.-->
+      <li><a href="#">Team (Drop Down)</a></li> 
+        <ul>
+          <li><a href="#">Bowser Jr.</a></li>
+          <li><a href="#">Lakitu</a></li>
+          <li><a href="#">Kamek</a></li>
+          <li><a href="#">Goomba</a></li>
+          <li><a href="#">Koopa</a></li> 
+        </ul>
+      <li><a href="#">Store</a></li>
+    </ul>
+  </div>
+  <!--section one: introduction, title, explanation -->
+  <div id="section_one_container">
+    <p><h1>Map</h1></p>
+    <p>Welcome to Bowser Jr's Castle!</p>
+    <p>クッパJr.の城へようこそ！</p>
+    <img class="img_hor" src="bowser_jr_pixel.png" style="width: 200px;">
+  </div>
+  <!--map-->
+  <div id="map_container">
+    <div id="map"></div>
+  </div>
+  <footer>
+    <p>Author: Konu</p>
+    <p><a href="wooalexlee@gmail.com">wooalexlee@gmail.com</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+IDEA 
+----
+- map has a set of fixed mario themed locations 
+- map has the ability for nintendo to add, remove, edit special limited event locations
+  - only people with the known fixed password can apply these changes
+  - password must use MD5 hash 
+- scrollable list of locations next to the map with details
+- clicking a detail should open up a popup that displays more details, image, and comments 
+- must use storage to save between sessions 
+- use github to track your progress
+- requires clean mario theme with lakitu as the mascot along with other enemy type mario characters 
+- color theme: yellow, green, white, 
+- hard idea: translate from japanese to english button
+-->
+
+
