@@ -10,9 +10,9 @@ var map = L.map('map', {
 });
 
 // stack overflow - helps load map fully 
-setTimeout(function () {
-  window.dispatchEvent(new Event('resize'));
-}, 1000);
+// setTimeout(function () {
+//   window.dispatchEvent(new Event('resize'));
+// }, 1000);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,

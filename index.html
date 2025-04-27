@@ -13,25 +13,26 @@
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
 </head>
-<body>
+<body>  
+  <!--empty space-->
+  <div class="spacer"></div>
   <!--menu list-->
   <div class="main_menu">
-    <ul class="menu_list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Map</a></li> <!--anchor-->
-      <!--lakitu, kamek, goomba, koopa, bowser jr.-->
-      <li><a href="#">Team (Drop Down)</a></li> 
-        <ul>
-          <li><a href="#">Bowser Jr.</a></li>
-          <li><a href="#">Lakitu</a></li>
-          <li><a href="#">Kamek</a></li>
-          <li><a href="#">Goomba</a></li>
-          <li><a href="#">Koopa</a></li> 
-        </ul>
-      <li><a href="#">Store</a></li>
-    </ul>
-  </div>
-  <!--section one: introduction, title, explanation -->
+    <a href="index.html">Home</a> 
+    <a href="#map_container">Map</a>
+    <div class="drop_down">
+      <div class="drop_button">
+        <a href="#">Team (Drop Down)</a> 
+      </div> 
+    </div>
+    <div class="drop_content">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+    </div>
+    <a href ="store.html">Store</a>
+  </div> 
+  <!--section one: introduction, title, explanation-->
   <div id="section_one_container">
     <p><h1>Map</h1></p>
     <p>Welcome to Bowser Jr's Castle!</p>
@@ -43,7 +44,7 @@
     <div id="map"></div>
   </div>
   <footer>
-    <p>Author: Konu</p>
+    <p>Author: Kon</p>
     <p><a href="wooalexlee@gmail.com">wooalexlee@gmail.com</a></p>
   </footer>
   <script src="script.js"></script>
